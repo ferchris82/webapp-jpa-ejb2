@@ -1,0 +1,9 @@
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\controllers\LoginServlet.java
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\controllers\LogoutServlet.java
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\controllers\ProductoServlet.java
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\models\Producto.java
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\services\LoginService.java
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\services\LoginServiceCookieImpl.java
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\services\LoginServiceSessionImpl.java
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\services\ProductoService.java
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\services\ProductoServiceImpl.java

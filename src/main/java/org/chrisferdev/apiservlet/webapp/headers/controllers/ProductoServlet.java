@@ -2,19 +2,14 @@ package org.chrisferdev.apiservlet.webapp.headers.controllers;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.chrisferdev.apiservlet.webapp.headers.models.Producto;
-import org.chrisferdev.apiservlet.webapp.headers.services.LoginService;
-import org.chrisferdev.apiservlet.webapp.headers.services.LoginServiceImpl;
-import org.chrisferdev.apiservlet.webapp.headers.services.ProductoService;
-import org.chrisferdev.apiservlet.webapp.headers.services.ProductoServiceImpl;
+import org.chrisferdev.apiservlet.webapp.headers.services.*;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -25,8 +20,8 @@ public class ProductoServlet extends HttpServlet {
         ProductoService service = new ProductoServiceImpl();
         List<Producto> productos = service.listar();
 
-        LoginService auth = new LoginServiceImpl();
-        Optional<String> cookieOptional = auth.getUsername(req);
+        LoginService auth = new LoginServiceSessionImpl();
+        Optional<String> usernameOptional = auth.getUsername(req);
 
 
         resp.setContentType("text/html;charset=UTF-8");
@@ -40,15 +35,15 @@ public class ProductoServlet extends HttpServlet {
             out.println("    </head>");
             out.println("    <body>");
             out.println("        <h1>Listado de Productos!</h1>");
-            if(cookieOptional.isPresent()) {
-                out.println("<div style='color: blue;'>Hola " + cookieOptional.get() + " Bienvenido!</div>");
+            if(usernameOptional.isPresent()) {
+                out.println("<div style='color: blue;'>Hola " + usernameOptional.get() + " Bienvenido!</div>");
             }
                 out.println("<table>");
             out.println("<tr>");
             out.println("<th>id</th>");
             out.println("<th>nombre</th>");
             out.println("<th>tipo</th>");
-            if(cookieOptional.isPresent()) {
+            if(usernameOptional.isPresent()) {
                 out.println("<th>precio</th>");
             }
             out.println("</tr>");
@@ -57,7 +52,7 @@ public class ProductoServlet extends HttpServlet {
                 out.println("<td>" + p.getId() + "</td>");
                 out.println("<td>" + p.getNombre() + "</td>");
                 out.println("<td>" + p.getTipo() + "</td>");
-                if(cookieOptional.isPresent()) {
+                if(usernameOptional.isPresent()) {
                     out.println("<td>" + p.getPrecio() + "</td>");
                 }
                 out.println("</tr>");

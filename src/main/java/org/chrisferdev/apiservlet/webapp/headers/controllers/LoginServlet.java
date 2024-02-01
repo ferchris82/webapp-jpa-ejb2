@@ -2,12 +2,10 @@ package org.chrisferdev.apiservlet.webapp.headers.controllers;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.Cookie;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.*;
 import org.chrisferdev.apiservlet.webapp.headers.services.LoginService;
-import org.chrisferdev.apiservlet.webapp.headers.services.LoginServiceImpl;
+import org.chrisferdev.apiservlet.webapp.headers.services.LoginServiceCookieImpl;
+import org.chrisferdev.apiservlet.webapp.headers.services.LoginServiceSessionImpl;
 
 import java.io.IOException;
 //import java.io.IOException;
@@ -22,10 +20,10 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        LoginService auth = new LoginServiceImpl();
-        Optional<String> cookieOptional = auth.getUsername(req);
+        LoginService auth = new LoginServiceSessionImpl();
+        Optional<String> usernameOptional = auth.getUsername(req);
 
-        if (cookieOptional.isPresent()) {
+        if (usernameOptional.isPresent()) {
             resp.setContentType("text/html;charset=UTF-8");
             try (PrintWriter out = resp.getWriter()) {
 
@@ -33,10 +31,10 @@ public class LoginServlet extends HttpServlet {
                 out.println("<html>");
                 out.println("    <head>");
                 out.println("        <meta charset=\"UTF-8\">");
-                out.println("        <title>Hola " + cookieOptional.get() + "</title>");
+                out.println("        <title>Hola " + usernameOptional.get() + "</title>");
                 out.println("    </head>");
                 out.println("    <body>");
-                out.println("        <h1>Hola " + cookieOptional.get() + " has iniciado sesión con éxito!</h1>");
+                out.println("        <h1>Hola " + usernameOptional.get() + " has iniciado sesión con éxito!</h1>");
                 out.println("<p><a href='" + req.getContextPath() + "/index.html'>volver</a></p>");
                 out.println("<p><a href='" + req.getContextPath() + "/logout'>cerrar sesión</a></p>");
                 out.println("    </body>");
@@ -54,8 +52,8 @@ public class LoginServlet extends HttpServlet {
 
         if (USERNAME.equals(username) && PASSWORD.equals(password)) {
 
-            Cookie usernameCookie = new Cookie("username", username);
-            resp.addCookie(usernameCookie);
+            HttpSession session = req.getSession();
+            session.setAttribute("username", username);
 
             resp.sendRedirect(req.getContextPath() + "/login.html");
         } else {

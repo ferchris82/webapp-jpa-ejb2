@@ -1,0 +1,9 @@
+org\chrisferdev\apiservlet\webapp\headers\controllers\LogoutServlet.class
+org\chrisferdev\apiservlet\webapp\headers\services\LoginService.class
+org\chrisferdev\apiservlet\webapp\headers\controllers\LoginServlet.class
+org\chrisferdev\apiservlet\webapp\headers\services\ProductoServiceImpl.class
+org\chrisferdev\apiservlet\webapp\headers\services\ProductoService.class
+org\chrisferdev\apiservlet\webapp\headers\models\Producto.class
+org\chrisferdev\apiservlet\webapp\headers\services\LoginServiceSessionImpl.class
+org\chrisferdev\apiservlet\webapp\headers\services\LoginServiceCookieImpl.class
+org\chrisferdev\apiservlet\webapp\headers\controllers\ProductoServlet.class
