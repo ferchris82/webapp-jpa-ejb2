@@ -6,8 +6,10 @@ org\chrisferdev\apiservlet\webapp\headers\models\Producto.class
 org\chrisferdev\apiservlet\webapp\headers\services\LoginServiceSessionImpl.class
 org\chrisferdev\apiservlet\webapp\headers\controllers\ProductoServlet.class
 org\chrisferdev\apiservlet\webapp\headers\services\LoginService.class
+org\chrisferdev\apiservlet\webapp\headers\controllers\ActualizarCarroServlet.class
 org\chrisferdev\apiservlet\webapp\headers\services\ProductoServiceImpl.class
 org\chrisferdev\apiservlet\webapp\headers\models\Carro.class
 org\chrisferdev\apiservlet\webapp\headers\services\LoginServiceCookieImpl.class
 org\chrisferdev\apiservlet\webapp\headers\controllers\VerCarroServlet.class
+org\chrisferdev\apiservlet\webapp\headers\listeners\AplicacionListener.class
 org\chrisferdev\apiservlet\webapp\headers\models\ItemCarro.class
