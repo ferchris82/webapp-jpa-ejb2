@@ -2,8 +2,10 @@ package org.chrisferdev.apiservlet.webapp.headers.listeners;
 
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebListener;
+import jakarta.servlet.http.HttpSession;
 import jakarta.servlet.http.HttpSessionEvent;
 import jakarta.servlet.http.HttpSessionListener;
+import org.chrisferdev.apiservlet.webapp.headers.models.Carro;
 
 @WebListener
 public class AplicacionListener implements ServletContextListener,
@@ -15,6 +17,7 @@ public class AplicacionListener implements ServletContextListener,
     public void contextInitialized(ServletContextEvent sce) {
         sce.getServletContext().log("inicializando la aplicación!");
         servletContext = sce.getServletContext();
+        servletContext.setAttribute("mensaje", "algún valor global de la app!");
     }
 
     @Override
@@ -25,6 +28,7 @@ public class AplicacionListener implements ServletContextListener,
     @Override
     public void requestInitialized(ServletRequestEvent sre) {
         servletContext.log("inicializando el request!");
+        sre.getServletRequest().setAttribute("mensaje", "guardando algún valor para el request");
     }
 
     @Override
@@ -35,6 +39,9 @@ public class AplicacionListener implements ServletContextListener,
     @Override
     public void sessionCreated(HttpSessionEvent se) {
         servletContext.log("inicializando la sesión http");
+        Carro carro = new Carro();
+        HttpSession session = se.getSession();
+        session.setAttribute("carro", carro);
     }
 
     @Override
