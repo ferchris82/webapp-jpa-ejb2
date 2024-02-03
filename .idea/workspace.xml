@@ -6,15 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="63b4859a-a52e-436d-a41d-4503a36d224d" name="Changes" comment="Version 1.2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/AgregarCarroServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/AgregarCarroServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/repositories/ProductoRepositoryJdbcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/repositories/ProductoRepositoryJdbcImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/AgregarCarroServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/AgregarCarroServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webapp-session.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp-session.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/AgregarCarroServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/AgregarCarroServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -175,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706991760936</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Version 1.2">
+      <created>1706995030710</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1706995030710</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
