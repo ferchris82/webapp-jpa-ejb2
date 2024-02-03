@@ -2,7 +2,6 @@ package org.chrisferdev.apiservlet.webapp.headers.repositories;
 
 import org.chrisferdev.apiservlet.webapp.headers.models.Producto;
 
-import javax.xml.transform.Result;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +19,7 @@ public class ProductoRepositoryJdbcImpl implements Repository<Producto> {
 
         try(Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT p.*, c.nombre AS categoria FROM productos as p " +
-                    " INNER JOIN categorias AS c ON (p.categoria_id = c.id")){
+                    " INNER JOIN categorias AS c ON (p.categoria_id = c.id)")){
             while(rs.next()){
                 Producto p = getProducto(rs);
 
@@ -33,8 +32,8 @@ public class ProductoRepositoryJdbcImpl implements Repository<Producto> {
     @Override
     public Producto porId(Long id) throws SQLException {
         Producto producto = null;
-        try(PreparedStatement stmt = conn.prepareStatement("SELECT p.*, c.nombre AS categoria FROM producto AS p " +
-                " INNER JOIN catagorias AS c ON (p.categoria_id = c.id) WHERE p.id = ?")){
+        try(PreparedStatement stmt = conn.prepareStatement("SELECT p.*, c.nombre AS categoria FROM productos AS p " +
+                " INNER JOIN categorias AS c ON (p.categoria_id = c.id) WHERE p.id = ?")){
             stmt.setLong(1, id);
 
             try(ResultSet rs = stmt.executeQuery()){
