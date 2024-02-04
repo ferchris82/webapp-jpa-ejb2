@@ -50,7 +50,7 @@ public class ProductoRepositoryJdbcImpl implements Repository<Producto> {
     public void guardar(Producto producto) throws SQLException {
         String sql;
         if(producto.getId() != null && producto.getId() >0){
-            sql = "update produtos set nombre=?, precio=?, sku=?, categoria_id=? WHERE id=?";
+            sql = "update productos set nombre=?, precio=?, sku=?, categoria_id=? WHERE id=?";
         } else {
             sql = "INSERT INTO productos (nombre, precio, sku, categoria_id, fecha_registro) values (?,?,?,?,?)";
         }
