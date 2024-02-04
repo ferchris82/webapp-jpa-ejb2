@@ -18,6 +18,7 @@ org\chrisferdev\apiservlet\webapp\headers\services\ProductoServiceJdbcImpl.class
 org\chrisferdev\apiservlet\webapp\headers\models\Producto.class
 org\chrisferdev\apiservlet\webapp\headers\controllers\ActualizarCarroServlet.class
 org\chrisferdev\apiservlet\webapp\headers\models\Categoria.class
+org\chrisferdev\apiservlet\webapp\headers\controllers\ProductoEliminarServlet.class
 org\chrisferdev\apiservlet\webapp\headers\services\LoginServiceCookieImpl.class
 org\chrisferdev\apiservlet\webapp\headers\controllers\VerCarroServlet.class
 org\chrisferdev\apiservlet\webapp\headers\filters\LoginFiltro.class
