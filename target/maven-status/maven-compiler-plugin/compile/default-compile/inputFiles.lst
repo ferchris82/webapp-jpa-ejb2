@@ -13,9 +13,12 @@ D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\weba
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\models\Categoria.java
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\models\ItemCarro.java
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\models\Producto.java
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\models\Usuario.java
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\repositories\CategoriaRepositoryImpl.java
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\repositories\ProductoRepositoryJdbcImpl.java
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\repositories\Repository.java
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\repositories\UsuarioRepository.java
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\repositories\UsuarioRepositoryImpl.java
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\services\LoginService.java
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\services\LoginServiceCookieImpl.java
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\services\LoginServiceSessionImpl.java
@@ -23,4 +26,6 @@ D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\weba
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\services\ProductoServiceImpl.java
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\services\ProductoServiceJdbcImpl.java
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\services\ServiceJdbcException.java
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\services\UsuarioService.java
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\services\UsuarioServiceImpl.java
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\util\ConexionBaseDatos.java
