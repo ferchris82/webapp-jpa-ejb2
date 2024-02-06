@@ -2,10 +2,8 @@ package org.chrisferdev.apiservlet.webapp.headers.repositories;
 
 import org.chrisferdev.apiservlet.webapp.headers.models.Usuario;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class UsuarioRepositoryImpl implements UsuarioRepository{
@@ -17,22 +15,58 @@ public class UsuarioRepositoryImpl implements UsuarioRepository{
 
     @Override
     public List<Usuario> listar() throws SQLException {
-        return null;
+        List<Usuario> usuarios = new ArrayList<>();
+        try (Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT * FROM usuarios")){
+            while (rs.next()){
+                Usuario p = getUsuario(rs);
+                usuarios.add(p);
+            }
+        }
+        return usuarios;
     }
 
     @Override
     public Usuario porId(Long id) throws SQLException {
-        return null;
+        Usuario usuario = null;
+        try (PreparedStatement stmt = conn.prepareStatement("SELECT * FROM usuarios WHERE id=?")){
+            stmt.setLong(1, id);
+            try (ResultSet rs = stmt.executeQuery()){
+                if(rs.next()){
+                    usuario = getUsuario(rs);
+                }
+            }
+        }
+        return usuario;
     }
 
     @Override
     public void guardar(Usuario usuario) throws SQLException {
+        String sql;
+        if (usuario.getId() != null && usuario.getId() >0){
+            sql = "UPDATE usuarios SET username=?, password=?, email=?, WHERE id=?";
+        } else {
+            sql = "INSERT INTO usuarios (username, password, email) values (?,?,?)";
+        }
+        try (PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setString(1, usuario.getUsername());
+            stmt.setString(2, usuario.getPassword());
+            stmt.setString(3, usuario.getEmail());
 
+            if (usuario.getId() != null && usuario.getId() > 0){
+                stmt.setLong(4, usuario.getId());
+            }
+            stmt.executeUpdate();
+        }
     }
 
     @Override
     public void eliminar(Long id) throws SQLException {
-
+        String sql = "DELETE FROM usuarios WHERE id=?";
+        try(PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setLong(1, id);
+            stmt.executeUpdate();
+        }
     }
 
     @Override
@@ -50,6 +84,15 @@ public class UsuarioRepositoryImpl implements UsuarioRepository{
                 }
             }
         }
+        return usuario;
+    }
+
+    private Usuario getUsuario(ResultSet rs) throws SQLException{
+        Usuario usuario = new Usuario();
+        usuario.setId(rs.getLong("id"));
+        usuario.setUsername(rs.getString("username"));
+        usuario.setPassword(rs.getString("password"));
+        usuario.setEmail(rs.getString("email"));
         return usuario;
     }
 }
