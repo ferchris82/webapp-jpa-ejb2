@@ -5,6 +5,9 @@ D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\weba
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\controllers\ProductoEliminarServlet.java
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\controllers\ProductoFormServlet.java
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\controllers\ProductoServlet.java
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\controllers\usuarios\UsuarioEliminarServlet.java
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\controllers\usuarios\UsuarioFormServlet.java
+D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\controllers\usuarios\UsuarioServlet.java
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\controllers\VerCarroServlet.java
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\filters\ConexionFilter.java
 D:\ProjectsIntelliJ\webapp-session\src\main\java\org\chrisferdev\apiservlet\webapp\headers\filters\LoginFiltro.java

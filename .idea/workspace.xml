@@ -6,9 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="63b4859a-a52e-436d-a41d-4503a36d224d" name="Changes" comment="Version 1.5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/UsuarioFormServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/usuarios/UsuarioFormServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/UsuarioServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/usuarios/UsuarioServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/filters/LoginFiltro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/filters/LoginFiltro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/layout/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layout/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/filters/LoginFiltro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/filters/LoginFiltro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp-session.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/filters/LoginFiltro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/filters/LoginFiltro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/layout/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp-session/layout/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707242226120</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Version 1.5">
+      <created>1707246180249</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1707246180249</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

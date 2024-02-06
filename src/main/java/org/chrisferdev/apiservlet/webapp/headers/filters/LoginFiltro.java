@@ -10,17 +10,17 @@ import org.chrisferdev.apiservlet.webapp.headers.services.LoginServiceSessionImp
 import java.io.IOException;
 import java.util.Optional;
 
-@WebFilter({"/carro/*", "/productos/form/*", "/productos/eliminar/*"})
+@WebFilter({"/carro/*", "/productos/form/*", "/productos/eliminar/*", "/usuarios/form/*", "/usuarios/eliminar/*"})
 public class LoginFiltro implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         LoginService service = new LoginServiceSessionImpl();
         Optional<String> username = service.getUsername((HttpServletRequest) request);
-        if(username.isPresent()){
+        if (username.isPresent()) {
             chain.doFilter(request, response);
         } else {
             ((HttpServletResponse)response).sendError(HttpServletResponse.SC_UNAUTHORIZED,
-                    "Lo sentimos no estas autorizado para ingresar a esta página!");
+                    "Lo sentimos no estas autorizado para ingresar a esta pagina!");
         }
     }
 }

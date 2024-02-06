@@ -20,6 +20,8 @@ org\chrisferdev\apiservlet\webapp\headers\services\ProductoServiceJdbcImpl.class
 org\chrisferdev\apiservlet\webapp\headers\models\Producto.class
 org\chrisferdev\apiservlet\webapp\headers\services\UsuarioServiceImpl.class
 org\chrisferdev\apiservlet\webapp\headers\controllers\ActualizarCarroServlet.class
+org\chrisferdev\apiservlet\webapp\headers\controllers\usuarios\UsuarioServlet.class
+org\chrisferdev\apiservlet\webapp\headers\controllers\usuarios\UsuarioFormServlet.class
 org\chrisferdev\apiservlet\webapp\headers\models\Categoria.class
 org\chrisferdev\apiservlet\webapp\headers\controllers\ProductoEliminarServlet.class
 org\chrisferdev\apiservlet\webapp\headers\repositories\UsuarioRepository.class
@@ -27,5 +29,6 @@ org\chrisferdev\apiservlet\webapp\headers\services\LoginServiceCookieImpl.class
 org\chrisferdev\apiservlet\webapp\headers\controllers\VerCarroServlet.class
 org\chrisferdev\apiservlet\webapp\headers\filters\LoginFiltro.class
 org\chrisferdev\apiservlet\webapp\headers\listeners\AplicacionListener.class
+org\chrisferdev\apiservlet\webapp\headers\controllers\usuarios\UsuarioEliminarServlet.class
 org\chrisferdev\apiservlet\webapp\headers\repositories\ProductoRepositoryJdbcImpl.class
 org\chrisferdev\apiservlet\webapp\headers\repositories\UsuarioRepositoryImpl.class
