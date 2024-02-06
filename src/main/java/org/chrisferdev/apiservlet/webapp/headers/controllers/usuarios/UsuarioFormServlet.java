@@ -17,6 +17,7 @@ import java.util.Optional;
 
 @WebServlet("/usuarios/form")
 public class UsuarioFormServlet extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Connection conn = (Connection) req.getAttribute("conn");
@@ -24,17 +25,18 @@ public class UsuarioFormServlet extends HttpServlet {
         long id;
         try {
             id = Long.parseLong(req.getParameter("id"));
-        } catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             id = 0L;
         }
         Usuario usuario = new Usuario();
 
-        if (id > 0){
+        if (id > 0) {
             Optional<Usuario> o = service.porId(id);
-            if (o.isPresent()){
+            if (o.isPresent()) {
                 usuario = o.get();
             }
         }
+
         req.setAttribute("usuario", usuario);
         req.setAttribute("title", req.getAttribute("title") + ": Registro de usuario");
 
@@ -43,13 +45,14 @@ public class UsuarioFormServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         Connection conn = (Connection) req.getAttribute("conn");
         UsuarioService service = new UsuarioServiceImpl(conn);
 
         long id;
-        try{
+        try {
             id = Long.parseLong(req.getParameter("id"));
-        }catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             id = 0L;
         }
 
@@ -59,30 +62,35 @@ public class UsuarioFormServlet extends HttpServlet {
 
         Map<String, String> errores = new HashMap<>();
 
-        if(username == null || username.isBlank()){
+        if (username == null || username.isBlank()) {
             errores.put("username", "el username es requerido!");
         }
-        if((id == 0) && (password == null || password.isBlank())){
+
+        if ((id == 0) && (password == null || password.isBlank())) {
             errores.put("password", "el password es requerido!");
         }
-        if(email == null || email.isBlank()){
+
+        if (email == null || email.isBlank()) {
             errores.put("email", "el email es requerido!");
         }
+
         Usuario usuario = new Usuario();
 
-        if(id > 0){
+        if (id > 0) {
             Optional<Usuario> o = service.porId(id);
-            if(o.isPresent()){
+            if (o.isPresent()) {
                 usuario = o.get();
             }
         }
+
         usuario.setEmail(email);
         usuario.setUsername(username);
 
-        if(password != null && !password.isBlank()){
+        if (password != null && !password.isBlank()) {
             usuario.setPassword(password);
         }
-        if(errores.isEmpty()){
+
+        if (errores.isEmpty()) {
             service.guardar(usuario);
             resp.sendRedirect(req.getContextPath() + "/usuarios");
         } else {

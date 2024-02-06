@@ -21,21 +21,21 @@ public class UsuarioEliminarServlet extends HttpServlet {
         Connection conn = (Connection) req.getAttribute("conn");
         UsuarioService service = new UsuarioServiceImpl(conn);
         long id;
-        try{
+        try {
             id = Long.parseLong(req.getParameter("id"));
-        }catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             id = 0L;
         }
-        if(id > 0){
+        if (id > 0) {
             Optional<Usuario> o = service.porId(id);
-            if(o.isPresent()){
+            if (o.isPresent()) {
                 service.eliminar(id);
                 resp.sendRedirect(req.getContextPath()+ "/usuarios");
-            }else {
-                resp.sendError(HttpServletResponse.SC_NOT_FOUND, "No existe el usuario en la base de datos!");
+            } else {
+                resp.sendError(HttpServletResponse.SC_NOT_FOUND, "No existe el usuarios en la base de datos!");
             }
         } else {
-            resp.sendError(HttpServletResponse.SC_NOT_FOUND, "Error el id es null, se debe enviar como parámetro en la url!");
+            resp.sendError(HttpServletResponse.SC_NOT_FOUND, "Error el id es null, se debe enviar como parametro en la url!");
         }
     }
 }

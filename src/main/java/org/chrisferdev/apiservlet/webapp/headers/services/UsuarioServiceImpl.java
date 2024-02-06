@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
-public class UsuarioServiceImpl implements  UsuarioService{
+public class UsuarioServiceImpl implements UsuarioService {
 
     private UsuarioRepository usuarioRepository;
 
@@ -23,7 +23,6 @@ public class UsuarioServiceImpl implements  UsuarioService{
             return Optional.ofNullable(usuarioRepository.porUsername(username)).filter(u -> u.getPassword().equals(password));
         } catch (SQLException e) {
             throw new ServiceJdbcException(e.getMessage(), e.getCause());
-
         }
     }
 
@@ -31,34 +30,34 @@ public class UsuarioServiceImpl implements  UsuarioService{
     public List<Usuario> listar() {
         try {
             return usuarioRepository.listar();
-        } catch (SQLException e){
+        } catch (SQLException e) {
             throw new ServiceJdbcException(e.getMessage(), e.getCause());
         }
     }
 
     @Override
     public Optional<Usuario> porId(Long id) {
-        try{
+        try {
             return Optional.ofNullable(usuarioRepository.porId(id));
-        } catch (SQLException e){
+        } catch (SQLException e) {
             throw new ServiceJdbcException(e.getMessage(), e.getCause());
         }
     }
 
     @Override
     public void guardar(Usuario usuario) {
-        try{
+        try {
             usuarioRepository.guardar(usuario);
-        } catch (SQLException e){
+        } catch (SQLException e) {
             throw new ServiceJdbcException(e.getMessage(), e.getCause());
         }
     }
 
     @Override
     public void eliminar(Long id) {
-        try{
+        try {
             usuarioRepository.eliminar(id);
-        } catch (SQLException e){
+        } catch (SQLException e) {
             throw new ServiceJdbcException(e.getMessage(), e.getCause());
         }
     }
