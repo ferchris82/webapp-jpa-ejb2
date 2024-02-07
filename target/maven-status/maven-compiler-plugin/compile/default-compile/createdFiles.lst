@@ -3,6 +3,7 @@ org\chrisferdev\apiservlet\webapp\headers\repositories\Repository.class
 org\chrisferdev\apiservlet\webapp\headers\services\ServiceJdbcException.class
 org\chrisferdev\apiservlet\webapp\headers\filters\ConexionFilter.class
 org\chrisferdev\apiservlet\webapp\headers\services\LoginServiceSessionImpl.class
+org\chrisferdev\apiservlet\webapp\headers\configs\ProducerResourses.class
 org\chrisferdev\apiservlet\webapp\headers\controllers\ProductoServlet.class
 org\chrisferdev\apiservlet\webapp\headers\models\Usuario.class
 org\chrisferdev\apiservlet\webapp\headers\services\LoginService.class

@@ -16,7 +16,5 @@ public class ConexionBaseDatosDS {
         Context envContext = (Context) initContext.lookup("java:/comp/env");
         DataSource ds = (DataSource) envContext.lookup("jdbc/mysqlDB");
         return ds.getConnection();
-
-
     }
 }
