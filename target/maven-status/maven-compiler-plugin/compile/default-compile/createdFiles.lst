@@ -17,6 +17,7 @@ org\chrisferdev\apiservlet\webapp\headers\controllers\AgregarCarroServlet.class
 org\chrisferdev\apiservlet\webapp\headers\controllers\LogoutServlet.class
 org\chrisferdev\apiservlet\webapp\headers\services\ProductoService.class
 org\chrisferdev\apiservlet\webapp\headers\services\ProductoServiceJdbcImpl.class
+org\chrisferdev\apiservlet\webapp\headers\util\ConexionBaseDatosDS.class
 org\chrisferdev\apiservlet\webapp\headers\models\Producto.class
 org\chrisferdev\apiservlet\webapp\headers\services\UsuarioServiceImpl.class
 org\chrisferdev\apiservlet\webapp\headers\controllers\ActualizarCarroServlet.class
