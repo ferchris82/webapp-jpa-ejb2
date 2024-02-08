@@ -1,10 +1,12 @@
 package org.chrisferdev.apiservlet.webapp.headers.controllers;
 
+import jakarta.inject.Inject;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.chrisferdev.apiservlet.webapp.headers.configs.ProductoServicePrincipal;
 import org.chrisferdev.apiservlet.webapp.headers.models.Categoria;
 import org.chrisferdev.apiservlet.webapp.headers.models.Producto;
 import org.chrisferdev.apiservlet.webapp.headers.services.ProductoService;
@@ -24,35 +26,36 @@ import static com.fasterxml.jackson.databind.type.LogicalType.Map;
 
 @WebServlet("/productos/form")
 public class ProductoFormServlet extends HttpServlet {
+    @Inject
+    @ProductoServicePrincipal
+    private ProductoService service;
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Connection conn = (Connection) req.getAttribute("conn");
-        ProductoService service = new ProductoServiceJdbcImpl(conn);
-        Long id;
+        long id;
         try {
-             id = Long.valueOf(req.getParameter("id"));
+            id = Long.parseLong(req.getParameter("id"));
         } catch (NumberFormatException e){
             id = 0L;
         }
         Producto producto = new Producto();
         producto.setCategoria(new Categoria());
-        if(id > 0){
+        if (id > 0) {
             Optional<Producto> o = service.porId(id);
-            if(o.isPresent()){
+            if (o.isPresent()) {
                 producto = o.get();
             }
         }
         req.setAttribute("categorias", service.listarCategoria());
         req.setAttribute("producto", producto);
         req.setAttribute("title", req.getAttribute("title") + ": Formulario de productos");
+
         getServletContext().getRequestDispatcher("/form.jsp").forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        Connection conn = (Connection) req.getAttribute("conn");
-        ProductoService service = new ProductoServiceJdbcImpl(conn);
         String nombre = req.getParameter("nombre");
 
         Integer precio;
@@ -66,34 +69,35 @@ public class ProductoFormServlet extends HttpServlet {
         String fechaStr = req.getParameter("fecha_registro");
         Long categoriaId;
         try {
-            categoriaId = Long.valueOf(req.getParameter("categoria"));
+            categoriaId = Long.parseLong(req.getParameter("categoria"));
         } catch (NumberFormatException e){
             categoriaId = 0L;
         }
 
         Map<String, String> errores = new HashMap<>();
-        if(nombre == null || nombre.isBlank()){
+        if (nombre == null || nombre.isBlank()){
             errores.put("nombre", "el nombre es requerido!");
         }
-        if(sku == null || sku.isBlank()){
+        if (sku == null || sku.isBlank()){
             errores.put("sku", "el sku es requerido!");
-        } else if(sku.length() > 10){
+        } else if (sku.length() > 10){
             errores.put("sku", "el sku debe tener max 10 caracteres!");
         }
-        if(fechaStr == null || fechaStr.isBlank()){
+
+        if (fechaStr == null || fechaStr.isBlank()){
             errores.put("fecha_registro", "la fecha es requerida");
         }
-        if(precio.equals(0)){
-            errores.put("precio", "el precio es requerido");
+        if (precio.equals(0)) {
+            errores.put("precio", "el precio es requerido!");
         }
-        if(categoriaId.equals(0L)){
+        if (categoriaId.equals(0L)){
             errores.put("categoria", "la categoria es requerida!");
         }
 
         LocalDate fecha;
         try {
             fecha = LocalDate.parse(fechaStr, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
-        } catch (DateTimeParseException e){
+        } catch (DateTimeParseException e) {
             fecha = null;
         }
         long id;
@@ -113,7 +117,7 @@ public class ProductoFormServlet extends HttpServlet {
         categoria.setId(categoriaId);
         producto.setCategoria(categoria);
 
-        if(errores.isEmpty()) {
+        if (errores.isEmpty()) {
             service.guardar(producto);
             resp.sendRedirect(req.getContextPath() + "/productos");
         } else {

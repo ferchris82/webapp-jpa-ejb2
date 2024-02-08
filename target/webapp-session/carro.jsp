@@ -3,9 +3,10 @@
 <jsp:include page="layout/header.jsp" />
 
 <h3>${title}</h3>
+
 <c:choose>
 <c:when test="${carro.items.isEmpty()}">
-<div class="alert alert-warning">Lo sentimos no hay productos en el carro de compras!</p>
+<div class="alert alert-warning">Lo sentimos no hay productos en el carro de compras!</div>
 </c:when>
 <c:otherwise>
 <form name="formcarro" action="${pageContext.request.contextPath}/carro/actualizar" method="post">
@@ -39,7 +40,7 @@
 </c:choose>
 <div class="my-2">
     <a class="btn btn-secondary" href="${pageContext.request.contextPath}/index.jsp">volver</a>
-        <a class="btn btn-success" href="${pageContext.request.contextPath}/productos">seguir comprando</a>
+    <a class="btn btn-success" href="${pageContext.request.contextPath}/productos">seguir comprando</a>
 </div>
 
 <jsp:include page="layout/footer.jsp" />
