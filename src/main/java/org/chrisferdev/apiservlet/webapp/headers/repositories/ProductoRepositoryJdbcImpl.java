@@ -39,7 +39,7 @@ public class ProductoRepositoryJdbcImpl implements CrudRepository<Producto> {
 
         try (Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery("SELECT p.*, c.nombre as categoria FROM productos as p " +
-                     " inner join categorias as c ON (p.categoria_id = c.id) order by p.id ASC")) {
+                     " INNER JOIN categorias as c ON (p.categoria_id = c.id) order by p.id ASC")) {
             while (rs.next()) {
                 Producto p = getProducto(rs);
                 productos.add(p);
@@ -52,7 +52,7 @@ public class ProductoRepositoryJdbcImpl implements CrudRepository<Producto> {
     public Producto porId(Long id) throws SQLException {
         Producto producto = null;
         try (PreparedStatement stmt = conn.prepareStatement("SELECT p.*, c.nombre as categoria FROM productos as p " +
-                " inner join categorias as c ON (p.categoria_id = c.id) WHERE p.id = ?")) {
+                " INNER JOIN categorias as c ON (p.categoria_id = c.id) WHERE p.id = ?")) {
             stmt.setLong(1, id);
 
             try (ResultSet rs = stmt.executeQuery()) {
@@ -69,9 +69,9 @@ public class ProductoRepositoryJdbcImpl implements CrudRepository<Producto> {
 
         String sql;
         if (producto.getId() != null && producto.getId() > 0) {
-            sql = "update productos set nombre=?, precio=?, sku=?, categoria_id=? where id=?";
+            sql = "UPDATE productos set nombre=?, precio=?, sku=?, categoria_id=? WHERE id=?";
         } else {
-            sql = "insert into productos (nombre, precio, sku, categoria_id, fecha_registro) values (?,?,?,?,?)";
+            sql = "INSERT INTO productos (nombre, precio, sku, categoria_id, fecha_registro) values (?,?,?,?,?)";
         }
         try (PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, producto.getNombre());
@@ -90,7 +90,7 @@ public class ProductoRepositoryJdbcImpl implements CrudRepository<Producto> {
 
     @Override
     public void eliminar(Long id) throws SQLException {
-        String sql = "delete from productos where id=?";
+        String sql = "DELETE FROM productos WHERE id=?";
         try (PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setLong(1, id);
             stmt.executeUpdate();
