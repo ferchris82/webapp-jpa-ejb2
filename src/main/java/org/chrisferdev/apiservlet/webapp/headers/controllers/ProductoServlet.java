@@ -7,12 +7,10 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.chrisferdev.apiservlet.webapp.headers.configs.ProductoServicePrincipal;
-import org.chrisferdev.apiservlet.webapp.headers.models.Producto;
+import org.chrisferdev.apiservlet.webapp.headers.models.entities.Producto;
 import org.chrisferdev.apiservlet.webapp.headers.services.*;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.sql.Connection;
 import java.util.List;
 import java.util.Optional;
 

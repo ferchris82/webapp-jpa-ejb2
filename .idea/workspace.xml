@@ -4,162 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cca51c3-dda0-4e76-8f33-2a049191d0a9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="7cca51c3-dda0-4e76-8f33-2a049191d0a9" name="Changes" comment="Versión 1.1">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/configs/CarroCompra.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/configs/MysqlConn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/configs/ProducerResources.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/configs/ProductoServicePrincipal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/configs/Repository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/configs/Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ActualizarCarroServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/AgregarCarroServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/LogoutServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoEliminarServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoFormServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/VerCarroServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/filters/ConexionFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/filters/LoginFiltro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/interceptors/Logging.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/interceptors/LoggingInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/interceptors/TransactionalInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/interceptors/TransactionalJdbc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/listeners/AplicacionListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/models/Carro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/models/Categoria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/models/ItemCarro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/models/Producto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/models/Usuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/CategoriaRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/CrudRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/ProductoRepositoryJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/LoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/LoginServiceCookieImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/LoginServiceSessionImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/ProductoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/ProductoServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/ProductoServiceJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/ServiceJdbcException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/util/ConexionBaseDatos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/util/ConexionBaseDatosDS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/configs/CarroCompra.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/configs/MysqlConn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/configs/ProducerResources.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/configs/ProductoServicePrincipal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/configs/Repository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/configs/Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ActualizarCarroServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/AgregarCarroServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/LogoutServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoEliminarServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoFormServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/VerCarroServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/filters/ConexionFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/filters/LoginFiltro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/interceptors/Logging.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/interceptors/LoggingInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/interceptors/TransactionalInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/interceptors/TransactionalJdbc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/listeners/AplicacionListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/models/Carro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/models/Categoria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/models/ItemCarro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/models/Producto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/models/Usuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/CategoriaRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/CrudRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/ProductoRepositoryJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/LoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/LoginServiceCookieImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/LoginServiceSessionImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/ProductoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/ProductoServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/ProductoServiceJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/ServiceJdbcException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/util/ConexionBaseDatos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/util/ConexionBaseDatosDS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jackson-annotations-2.12.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jackson-annotations-2.15.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jackson-core-2.12.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jackson-core-2.15.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jackson-databind-2.12.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jackson-databind-2.15.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.activation-2.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.annotation-api-2.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.annotation-api-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.el-api-4.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.el-api-5.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.enterprise.cdi-api-3.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.enterprise.cdi-api-4.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.inject-api-2.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.interceptor-api-2.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.interceptor-api-2.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.servlet-api-5.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.servlet-api-6.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.servlet.jsp.jstl-2.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-2.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.xml.bind-api-3.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jboss-classfilewriter-1.2.4.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jboss-classfilewriter-1.3.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jboss-logging-3.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jboss-logging-3.5.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jboss-logging-annotations-2.2.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jboss-logging-processor-2.2.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jdeparser-2.0.3.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-api-4.0.SP1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-api-5.0.SP3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-core-impl-4.0.1.SP1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-core-impl-5.1.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-environment-common-4.0.1.SP1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-environment-common-5.1.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-jsf-4.0.1.SP1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-jsf-5.1.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-lite-extension-translator-5.1.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-probe-core-4.0.1.SP1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-servlet-core-4.0.1.SP1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-servlet-core-5.1.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-spi-4.0.SP1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-spi-5.0.SP3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-web-4.0.1.SP1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-web-5.1.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/carro.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/form.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/layout/footer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/layout/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/listar.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/AgregarCarroServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/AgregarCarroServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoEliminarServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoEliminarServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoFormServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoFormServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/models/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/models/entities/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/models/ItemCarro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/models/ItemCarro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/models/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/models/entities/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/models/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/models/entities/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/repositories/CategoriaRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/repositories/CategoriaRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/repositories/ProductoRepositoryJdbcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/repositories/ProductoRepositoryJdbcImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/services/ProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/services/ProductoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/services/ProductoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/services/ProductoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/services/ProductoServiceJdbcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/services/ProductoServiceJdbcImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -179,6 +57,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/ProjectsIntelliJ/webapp-jpa",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
@@ -193,6 +72,18 @@
       <option name="presentableId" value="Default" />
       <updated>1708101779249</updated>
     </task>
+    <task id="LOCAL-00001" summary="Versión 1.1">
+      <created>1708103164428</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708103164428</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Versión 1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Versión 1.1" />
   </component>
 </project>

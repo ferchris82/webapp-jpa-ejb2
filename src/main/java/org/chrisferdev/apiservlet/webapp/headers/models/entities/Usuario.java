@@ -1,6 +1,13 @@
-package org.chrisferdev.apiservlet.webapp.headers.models;
+package org.chrisferdev.apiservlet.webapp.headers.models.entities;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "usuarios")
 public class Usuario {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String username;
     private String password;

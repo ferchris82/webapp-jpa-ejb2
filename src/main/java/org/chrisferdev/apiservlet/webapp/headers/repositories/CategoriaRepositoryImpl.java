@@ -3,7 +3,7 @@ package org.chrisferdev.apiservlet.webapp.headers.repositories;
 import jakarta.inject.Inject;
 import org.chrisferdev.apiservlet.webapp.headers.configs.MysqlConn;
 import org.chrisferdev.apiservlet.webapp.headers.configs.Repository;
-import org.chrisferdev.apiservlet.webapp.headers.models.Categoria;
+import org.chrisferdev.apiservlet.webapp.headers.models.entities.Categoria;
 
 import java.sql.*;
 import java.util.ArrayList;

@@ -2,7 +2,7 @@ package org.chrisferdev.apiservlet.webapp.headers.services;
 
 import jakarta.inject.Inject;
 import org.chrisferdev.apiservlet.webapp.headers.configs.Service;
-import org.chrisferdev.apiservlet.webapp.headers.models.Usuario;
+import org.chrisferdev.apiservlet.webapp.headers.models.entities.Usuario;
 import org.chrisferdev.apiservlet.webapp.headers.repositories.UsuarioRepository;
 
 import java.sql.SQLException;

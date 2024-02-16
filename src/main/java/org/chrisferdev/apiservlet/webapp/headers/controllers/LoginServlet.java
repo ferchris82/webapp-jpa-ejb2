@@ -4,13 +4,12 @@ import jakarta.inject.Inject;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
-import org.chrisferdev.apiservlet.webapp.headers.models.Usuario;
+import org.chrisferdev.apiservlet.webapp.headers.models.entities.Usuario;
 import org.chrisferdev.apiservlet.webapp.headers.services.*;
 
 import java.io.IOException;
 //import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
 import java.util.Optional;
 
 @WebServlet({"/login", "/login.html"})

@@ -3,14 +3,12 @@ package org.chrisferdev.apiservlet.webapp.headers.repositories;
 import jakarta.inject.Inject;
 import org.chrisferdev.apiservlet.webapp.headers.configs.MysqlConn;
 import org.chrisferdev.apiservlet.webapp.headers.configs.Repository;
-import org.chrisferdev.apiservlet.webapp.headers.models.Usuario;
+import org.chrisferdev.apiservlet.webapp.headers.models.entities.Usuario;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
 import java.util.List;
 
 @Repository

@@ -7,22 +7,17 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.chrisferdev.apiservlet.webapp.headers.configs.ProductoServicePrincipal;
-import org.chrisferdev.apiservlet.webapp.headers.models.Categoria;
-import org.chrisferdev.apiservlet.webapp.headers.models.Producto;
+import org.chrisferdev.apiservlet.webapp.headers.models.entities.Categoria;
+import org.chrisferdev.apiservlet.webapp.headers.models.entities.Producto;
 import org.chrisferdev.apiservlet.webapp.headers.services.ProductoService;
-import org.chrisferdev.apiservlet.webapp.headers.services.ProductoServiceJdbcImpl;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
-
-import static com.fasterxml.jackson.databind.type.LogicalType.Map;
 
 @WebServlet("/productos/form")
 public class ProductoFormServlet extends HttpServlet {

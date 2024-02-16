@@ -9,6 +9,8 @@ import jakarta.enterprise.inject.Produces;
 import jakarta.enterprise.inject.spi.InjectionPoint;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
+import jakarta.persistence.EntityManager;
+import org.chrisferdev.apiservlet.webapp.headers.util.JpaUtil;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -45,5 +47,18 @@ public class ProducerResources {
     public void close(@Disposes @MysqlConn Connection connection) throws SQLException {
         connection.close();
         log.info("cerrando la conexion a la bbdd mysql!");
+    }
+
+    @Produces
+    @RequestScoped
+    private EntityManager beanEntityManager(){
+        return JpaUtil.getEntityManager();
+    }
+
+    public void close(@Disposes EntityManager entityManager){
+        if(entityManager.isOpen()){
+            entityManager.close();
+            log.info("cerrando la conexion del EntityManager!");
+        }
     }
 }

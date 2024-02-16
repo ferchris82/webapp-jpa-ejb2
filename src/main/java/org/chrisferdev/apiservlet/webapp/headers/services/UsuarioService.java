@@ -1,7 +1,7 @@
 package org.chrisferdev.apiservlet.webapp.headers.services;
 
 
-import org.chrisferdev.apiservlet.webapp.headers.models.Usuario;
+import org.chrisferdev.apiservlet.webapp.headers.models.entities.Usuario;
 
 import java.util.Optional;
 

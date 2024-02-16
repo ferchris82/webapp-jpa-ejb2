@@ -1,7 +1,7 @@
 package org.chrisferdev.apiservlet.webapp.headers.services;
 
-import org.chrisferdev.apiservlet.webapp.headers.models.Categoria;
-import org.chrisferdev.apiservlet.webapp.headers.models.Producto;
+import org.chrisferdev.apiservlet.webapp.headers.models.entities.Categoria;
+import org.chrisferdev.apiservlet.webapp.headers.models.entities.Producto;
 
 import java.util.List;
 import java.util.Optional;
