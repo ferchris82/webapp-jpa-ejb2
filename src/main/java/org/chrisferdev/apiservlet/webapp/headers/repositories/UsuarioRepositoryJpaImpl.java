@@ -38,6 +38,6 @@ public class UsuarioRepositoryJpaImpl implements UsuarioRepository{
     public Usuario porUsername(String username) throws Exception {
         return em.createQuery("SELECT u FROM Usuario u WHERE u.username = :username", Usuario.class)
                 .setParameter("username", username)
-                .getResultList();
+                .getSingleResult();
     }
 }
