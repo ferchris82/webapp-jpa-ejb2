@@ -7,7 +7,7 @@ import org.chrisferdev.apiservlet.webapp.headers.models.entities.Categoria;
 import org.chrisferdev.apiservlet.webapp.headers.models.entities.Producto;
 import org.chrisferdev.apiservlet.webapp.headers.repositories.CrudRepository;
 
-import java.sql.SQLException;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -24,7 +24,7 @@ public class ProductoServiceJdbcImpl implements ProductoService{
     public List<Producto> listar() {
         try {
             return crudRepositoryJdbc.listar();
-        } catch (SQLException throwables) {
+        } catch (Exception throwables) {
             throw new ServiceJdbcException(throwables.getMessage(), throwables.getCause());
         }
     }
@@ -33,7 +33,7 @@ public class ProductoServiceJdbcImpl implements ProductoService{
     public Optional<Producto> porId(Long id) {
         try {
             return Optional.ofNullable(crudRepositoryJdbc.porId(id));
-        } catch (SQLException throwables) {
+        } catch (Exception throwables) {
             throw new ServiceJdbcException(throwables.getMessage(), throwables.getCause());
 
         }
@@ -43,7 +43,7 @@ public class ProductoServiceJdbcImpl implements ProductoService{
     public void guardar(Producto producto) {
         try {
             crudRepositoryJdbc.guardar(producto);
-        } catch (SQLException throwables) {
+        } catch (Exception throwables) {
             throw new ServiceJdbcException(throwables.getMessage(), throwables.getCause());
         }
     }
@@ -52,7 +52,7 @@ public class ProductoServiceJdbcImpl implements ProductoService{
     public void eliminar(Long id) {
         try {
             crudRepositoryJdbc.eliminar(id);
-        } catch (SQLException throwables) {
+        } catch (Exception throwables) {
             throw new ServiceJdbcException(throwables.getMessage(), throwables.getCause());
         }
     }
@@ -61,7 +61,7 @@ public class ProductoServiceJdbcImpl implements ProductoService{
     public List<Categoria> listarCategoria() {
         try {
             return crudRepositoryCategoriaJdbc.listar();
-        } catch (SQLException throwables) {
+        } catch (Exception throwables) {
             throw new ServiceJdbcException(throwables.getMessage(), throwables.getCause());
         }
     }
@@ -70,7 +70,7 @@ public class ProductoServiceJdbcImpl implements ProductoService{
     public Optional<Categoria> porIdCategoria(Long id) {
         try {
             return Optional.ofNullable(crudRepositoryCategoriaJdbc.porId(id));
-        } catch (SQLException throwables) {
+        } catch (Exception throwables) {
             throw new ServiceJdbcException(throwables.getMessage(), throwables.getCause());
         }
     }
