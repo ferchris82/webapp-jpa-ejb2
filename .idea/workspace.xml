@@ -4,30 +4,165 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b4859a-a52e-436d-a41d-4503a36d224d" name="Changes" comment="Version 1.6">
+    <list default="true" id="7cca51c3-dda0-4e76-8f33-2a049191d0a9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/repositories/ProductoRepositoryJdbcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/chrisferdev/apiservlet/webapp/headers/repositories/ProductoRepositoryJdbcImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webapp-session.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/webapp-session.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/configs/CarroCompra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/configs/MysqlConn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/configs/ProducerResources.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/configs/ProductoServicePrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/configs/Repository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/configs/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ActualizarCarroServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/AgregarCarroServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoEliminarServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoFormServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/VerCarroServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/filters/ConexionFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/filters/LoginFiltro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/interceptors/Logging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/interceptors/LoggingInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/interceptors/TransactionalInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/interceptors/TransactionalJdbc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/listeners/AplicacionListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/models/Carro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/models/Categoria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/models/ItemCarro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/models/Producto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/models/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/CategoriaRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/CrudRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/ProductoRepositoryJdbcImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/LoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/LoginServiceCookieImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/LoginServiceSessionImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/ProductoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/ProductoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/ProductoServiceJdbcImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/ServiceJdbcException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/util/ConexionBaseDatos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/chrisferdev/apiservlet/webapp/headers/util/ConexionBaseDatosDS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/META-INF/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/configs/CarroCompra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/configs/MysqlConn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/configs/ProducerResources.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/configs/ProductoServicePrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/configs/Repository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/configs/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ActualizarCarroServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/AgregarCarroServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoEliminarServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoFormServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/ProductoServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/controllers/VerCarroServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/filters/ConexionFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/filters/LoginFiltro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/interceptors/Logging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/interceptors/LoggingInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/interceptors/TransactionalInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/interceptors/TransactionalJdbc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/listeners/AplicacionListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/models/Carro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/models/Categoria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/models/ItemCarro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/models/Producto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/models/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/CategoriaRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/CrudRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/ProductoRepositoryJdbcImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/repositories/UsuarioRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/LoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/LoginServiceCookieImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/LoginServiceSessionImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/ProductoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/ProductoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/ProductoServiceJdbcImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/ServiceJdbcException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/services/UsuarioServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/util/ConexionBaseDatos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/classes/org/chrisferdev/apiservlet/webapp/headers/util/ConexionBaseDatosDS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jackson-annotations-2.12.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jackson-annotations-2.15.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jackson-core-2.12.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jackson-core-2.15.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jackson-databind-2.12.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jackson-databind-2.15.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.activation-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.annotation-api-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.annotation-api-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.el-api-4.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.el-api-5.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.enterprise.cdi-api-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.enterprise.cdi-api-4.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.inject-api-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.interceptor-api-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.interceptor-api-2.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.servlet-api-5.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.servlet-api-6.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.servlet.jsp.jstl-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jakarta.xml.bind-api-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jboss-classfilewriter-1.2.4.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jboss-classfilewriter-1.3.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jboss-logging-3.4.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jboss-logging-3.5.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jboss-logging-annotations-2.2.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jboss-logging-processor-2.2.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/jdeparser-2.0.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-api-4.0.SP1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-api-5.0.SP3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-core-impl-4.0.1.SP1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-core-impl-5.1.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-environment-common-4.0.1.SP1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-environment-common-5.1.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-jsf-4.0.1.SP1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-jsf-5.1.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-lite-extension-translator-5.1.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-probe-core-4.0.1.SP1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-servlet-core-4.0.1.SP1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-servlet-core-5.1.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-spi-4.0.SP1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-spi-5.0.SP3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-web-4.0.1.SP1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/lib/weld-web-5.1.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/carro.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/layout/footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/layout/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/listar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webapp-session/login.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -36,373 +171,28 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2bkSbuviSlpaWtNztUcKlr2OAbv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2cSOzsd5I5pgceu3btDeGcCCsc6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ProjectsIntelliJ/webapp-session&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/ProjectsIntelliJ/webapp-jpa",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.chrisferdev.apiservlet.webapp.headers.models" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ProjectsIntelliJ" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\ProjectsIntelliJ\webapp-session\src\main\webapp\WEB-INF" />
-      <recent name="D:\ProjectsIntelliJ\webapp-session\src\main\webapp\META-INF" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.chrisferdev.apiservlet.webapp.headers.util" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="tomcat" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="tomcat7:redeploy" />
-              </list>
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="63b4859a-a52e-436d-a41d-4503a36d224d" name="Changes" comment="" />
-      <created>1706757659270</created>
+      <changelist id="7cca51c3-dda0-4e76-8f33-2a049191d0a9" name="Changes" comment="" />
+      <created>1708101779249</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1706757659270</updated>
+      <updated>1708101779249</updated>
     </task>
-    <task id="LOCAL-00001" summary="Version 0.1">
-      <created>1706757870836</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1706757870836</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Version 0.1">
-      <created>1706758506110</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1706758506110</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Version 1.1">
-      <created>1706809783826</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1706809783827</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Version 1.1">
-      <created>1706811118376</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1706811118376</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Version 1.1">
-      <created>1706812160016</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1706812160016</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Version 1.1">
-      <created>1706814220353</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1706814220353</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Version 1.1">
-      <created>1706823719339</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1706823719339</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Version 1.1">
-      <created>1706824999482</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1706824999482</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Version 1.1">
-      <created>1706837876094</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1706837876094</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Version 1.1">
-      <created>1706839329863</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1706839329863</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Version 1.2">
-      <created>1706989085600</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1706989085600</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Version 1.2">
-      <created>1706991760936</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1706991760936</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Version 1.2">
-      <created>1706995030710</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1706995030710</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Version 1.2">
-      <created>1706998006390</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1706998006390</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Version 1.3">
-      <created>1707073858389</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1707073858389</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Version 1.3">
-      <created>1707074467942</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1707074467942</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Version 1.3">
-      <created>1707075699712</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1707075699712</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Version 1.3">
-      <created>1707077369565</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1707077369565</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Version 1.3">
-      <created>1707078130884</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1707078130884</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Version 1.3">
-      <created>1707080731915</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1707080731915</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Version 1.3">
-      <created>1707082573860</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1707082573860</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Version 1.3">
-      <created>1707084008738</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1707084008738</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Version 1.3">
-      <created>1707085397256</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1707085397256</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Version 1.3">
-      <created>1707085410271</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1707085410271</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Version 1.3">
-      <created>1707085420400</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1707085420400</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Version 1.4">
-      <created>1707157003562</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1707157003563</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Version 1.4">
-      <created>1707162806248</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1707162806248</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Version 1.4">
-      <created>1707162820860</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1707162820860</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Version 1.4">
-      <created>1707169608560</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1707169608560</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Version 1.4">
-      <created>1707171800986</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1707171800986</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Version 1.5">
-      <created>1707241309404</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1707241309404</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Version 1.5">
-      <created>1707242152555</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1707242152555</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Version 1.5">
-      <created>1707242226120</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1707242226120</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Version 1.5">
-      <created>1707246180249</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1707246180249</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Version 1.5">
-      <created>1707248611203</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1707248611203</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Version 1.5">
-      <created>1707249351676</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1707249351676</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Version 1.5">
-      <created>1707325635753</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1707325635753</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Version 1.6">
-      <created>1707327368691</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1707327368691</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Version 1.6">
-      <created>1707340509289</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1707340509289</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Version 1.6">
-      <created>1707342185717</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1707342185717</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Version 1.6">
-      <created>1707355321131</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1707355321131</updated>
-    </task>
-    <option name="localTasksCounter" value="42" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
-    <MESSAGE value="Version 0.1" />
-    <MESSAGE value="Version 1.1" />
-    <MESSAGE value="Version 1.2" />
-    <MESSAGE value="Version 1.3" />
-    <MESSAGE value="Version 1.4" />
-    <MESSAGE value="Version 1.5" />
-    <MESSAGE value="Version 1.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.6" />
   </component>
 </project>
