@@ -2,9 +2,13 @@ package org.chrisferdev.apiservlet.webapp.headers.repositories;
 
 import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
+import org.chrisferdev.apiservlet.webapp.headers.configs.Repository;
 import org.chrisferdev.apiservlet.webapp.headers.models.entities.Usuario;
 
 import java.util.List;
+
+@RepositoryJpa
+@Repository
 
 public class UsuarioRepositoryJpaImpl implements UsuarioRepository{
     @Inject

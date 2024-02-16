@@ -7,7 +7,9 @@ import org.chrisferdev.apiservlet.webapp.headers.models.entities.Producto;
 
 import java.util.List;
 
+@RepositoryJpa
 @Repository
+
 public class ProductoRepositoryJpaImpl implements CrudRepository<Producto> {
 
     @Inject

@@ -10,5 +10,8 @@
         <class>
             org.chrisferdev.apiservlet.webapp.headers.interceptors.TransactionalInterceptor
         </class>
+        <class>
+            org.chrisferdev.apiservlet.webapp.headers.interceptors.TransactionalJpaInterceptor
+        </class>
     </interceptors>
 </beans>
