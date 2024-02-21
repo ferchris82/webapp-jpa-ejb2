@@ -7,9 +7,6 @@ import jakarta.enterprise.inject.Disposes;
 import jakarta.enterprise.inject.Produces;
 import jakarta.enterprise.inject.spi.InjectionPoint;
 import jakarta.inject.Inject;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.PersistenceUnit;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -25,8 +22,6 @@ public class ProducerResources {
     @Resource(lookup="java:/MySqlDS")
     private DataSource ds;
 
-    @PersistenceUnit(name = "ejemploJpa")
-    private EntityManagerFactory emf;
     @Produces
     @RequestScoped
     @MysqlConn
@@ -47,16 +42,4 @@ public class ProducerResources {
         log.info("cerrando la conexion a la bbdd mysql!");
     }
 
-    @Produces
-    @RequestScoped
-    private EntityManager beanEntityManager(){
-        return emf.createEntityManager();
-    }
-
-    public void close(@Disposes EntityManager entityManager){
-        if(entityManager.isOpen()){
-            entityManager.close();
-            log.info("cerrando la conexion del EntityManager!");
-        }
-    }
 }

@@ -16,6 +16,7 @@ org\chrisferdev\apiservlet\webapp\headers\repositories\CategoriaRepositoryImpl.c
 org\chrisferdev\apiservlet\webapp\headers\services\ProductoServiceImpl.class
 org\chrisferdev\apiservlet\webapp\headers\models\Carro.class
 org\chrisferdev\apiservlet\webapp\headers\models\entities\Producto.class
+org\chrisferdev\apiservlet\webapp\headers\configs\ProducerEntityManager.class
 org\chrisferdev\apiservlet\webapp\headers\configs\Service.class
 org\chrisferdev\apiservlet\webapp\headers\controllers\ProductoFormServlet.class
 org\chrisferdev\apiservlet\webapp\headers\repositories\ProductoRepositoryJpaImpl.class

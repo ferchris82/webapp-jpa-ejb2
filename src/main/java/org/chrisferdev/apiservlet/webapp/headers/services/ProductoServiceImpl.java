@@ -1,5 +1,6 @@
 package org.chrisferdev.apiservlet.webapp.headers.services;
 
+import jakarta.ejb.Stateful;
 import jakarta.ejb.Stateless;
 import jakarta.inject.Inject;
 import org.chrisferdev.apiservlet.webapp.headers.configs.ProductoServicePrincipal;
@@ -15,7 +16,7 @@ import java.util.Optional;
 
 @Service
 @ProductoServicePrincipal
-@Stateless
+@Stateful
 public class ProductoServiceImpl implements ProductoService{
     @Inject
     @RepositoryJpa

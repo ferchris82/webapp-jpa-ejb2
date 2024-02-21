@@ -1,5 +1,6 @@
 package org.chrisferdev.apiservlet.webapp.headers.services;
 
+import jakarta.ejb.Stateful;
 import jakarta.ejb.Stateless;
 import jakarta.inject.Inject;
 import org.chrisferdev.apiservlet.webapp.headers.configs.Service;
@@ -11,7 +12,7 @@ import org.chrisferdev.apiservlet.webapp.headers.repositories.UsuarioRepository;
 import java.util.Optional;
 
 @Service
-@Stateless
+@Stateful
 public class UsuarioServiceImpl implements UsuarioService{
     private UsuarioRepository usuarioRepository;
 
