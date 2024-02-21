@@ -6,7 +6,6 @@ import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletResponse;
 import org.chrisferdev.apiservlet.webapp.headers.services.ServiceJdbcException;
-import org.chrisferdev.apiservlet.webapp.headers.util.ConexionBaseDatosDS;
 
 import javax.naming.NamingException;
 import java.io.IOException;

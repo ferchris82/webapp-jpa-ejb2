@@ -1,9 +1,9 @@
 package org.chrisferdev.apiservlet.webapp.headers.services;
 
+import jakarta.ejb.Stateless;
 import jakarta.inject.Inject;
 import org.chrisferdev.apiservlet.webapp.headers.configs.ProductoServicePrincipal;
 import org.chrisferdev.apiservlet.webapp.headers.configs.Service;
-import org.chrisferdev.apiservlet.webapp.headers.interceptors.TransactionalJpa;
 import org.chrisferdev.apiservlet.webapp.headers.models.entities.Categoria;
 import org.chrisferdev.apiservlet.webapp.headers.models.entities.Producto;
 import org.chrisferdev.apiservlet.webapp.headers.repositories.CrudRepository;
@@ -15,7 +15,7 @@ import java.util.Optional;
 
 @Service
 @ProductoServicePrincipal
-@TransactionalJpa
+@Stateless
 public class ProductoServiceImpl implements ProductoService{
     @Inject
     @RepositoryJpa

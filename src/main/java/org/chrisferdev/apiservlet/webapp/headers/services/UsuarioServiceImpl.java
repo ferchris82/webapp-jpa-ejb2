@@ -1,8 +1,8 @@
 package org.chrisferdev.apiservlet.webapp.headers.services;
 
+import jakarta.ejb.Stateless;
 import jakarta.inject.Inject;
 import org.chrisferdev.apiservlet.webapp.headers.configs.Service;
-import org.chrisferdev.apiservlet.webapp.headers.interceptors.TransactionalJpa;
 import org.chrisferdev.apiservlet.webapp.headers.models.entities.Usuario;
 import org.chrisferdev.apiservlet.webapp.headers.repositories.RepositoryJpa;
 import org.chrisferdev.apiservlet.webapp.headers.repositories.UsuarioRepository;
@@ -11,7 +11,7 @@ import org.chrisferdev.apiservlet.webapp.headers.repositories.UsuarioRepository;
 import java.util.Optional;
 
 @Service
-@TransactionalJpa
+@Stateless
 public class UsuarioServiceImpl implements UsuarioService{
     private UsuarioRepository usuarioRepository;
 

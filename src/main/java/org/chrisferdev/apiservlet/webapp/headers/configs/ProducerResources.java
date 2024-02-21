@@ -2,18 +2,14 @@ package org.chrisferdev.apiservlet.webapp.headers.configs;
 
 import jakarta.annotation.Resource;
 import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.enterprise.context.Dependent;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.enterprise.inject.Disposes;
 import jakarta.enterprise.inject.Produces;
 import jakarta.enterprise.inject.spi.InjectionPoint;
 import jakarta.inject.Inject;
-import jakarta.inject.Named;
 import jakarta.persistence.EntityManager;
-import org.chrisferdev.apiservlet.webapp.headers.util.JpaUtil;
-
-import javax.naming.Context;
-import javax.naming.InitialContext;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.PersistenceUnit;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -26,9 +22,11 @@ public class ProducerResources {
     @Inject
     private Logger log;
 
-    @Resource(name="jdbc/mysqlDB")
+    @Resource(lookup="java:/MySqlDS")
     private DataSource ds;
 
+    @PersistenceUnit(name = "ejemploJpa")
+    private EntityManagerFactory emf;
     @Produces
     @RequestScoped
     @MysqlConn
@@ -52,7 +50,7 @@ public class ProducerResources {
     @Produces
     @RequestScoped
     private EntityManager beanEntityManager(){
-        return JpaUtil.getEntityManager();
+        return emf.createEntityManager();
     }
 
     public void close(@Disposes EntityManager entityManager){
